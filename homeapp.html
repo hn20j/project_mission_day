@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <title>home</title>
+</head>
+<body>
+
+    <div class="top-navbar">
+        <div class="logo">
+            <a href="7AJZAPP.html">7AJZ</a>
+        </div>
+        <div class="nav-icons">
+            <a href="notification.html"><img src="notification.png" alt="notification" class="notification"></a>
+            <img src="user.png" alt="Profile" height="30px" width="30px">
+        </div>
+    </div>
+    
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="QFu6.png" alt="Photo 1"></div>
+            <div class="swiper-slide"><img src="QFu6.png" alt="Photo 2"></div>
+            <div class="swiper-slide"><img src="6.png" alt="Photo 3"></div>
+            <div class="swiper-slide"><img src="6.png" alt="Photo 4"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <h2 class="offers-title">Special Offers</h2>
+    <div class="cube-offers">
+        <div class="bord-elemnt-offer1">
+            <h3>Offer 1</h3>
+        </div>
+        <div class="bord-elemnt-offer2">
+            <h3>Offer 2</h3>
+        </div>
+        <div class="bord-elemnt-offer3">
+            <h3>Offer 3</h3>
+        </div>
+        <div class="bord-elemnt-offer4">
+            <h3>Offer 4</h3>
+        </div>
+    </div>
+
+  
+ 
+    <div class="list-home">
+        <ul>
+            <li><a href="signin.html"><img src="user.png" height="40px" width="40px"></a></li>
+            <li><a href="productspage.html"><img src="football.png" height="40px" width="40px"></a></li>
+            <li><a href="page7ajz.html"><img src="football-field.png" height="40px" width="40px"></a></li>
+            <li><a href="homeapp.html"><img src="home.png" height="40px" width="40px"></a></li>
+        </ul>
+    </div>
+
+    
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            font-family: Arial;
+        }
+        .list-home{
+            background-color: white;
+            height: 25px;
+            width: 95%;
+            position: fixed;
+            bottom: 6px;
+            display: flex;
+            justify-content: space-around ;
+            padding: 20px ;
+        }
+        .list-home ul{
+            display: flex;
+            justify-content: space-around;
+            width: 90%;
+            padding: 0;
+            margin-top: -4px;
+            list-style: none;
+        }
+         li:hover{
+            background-color: #a1a1a1 ;
+            border-radius: 10px;
+            height: 40px;
+            width: 40px;
+            cursor: pointer;
+            padding: 5px;
+        }
+        @media only screen and (max-width: 400px) {
+            .list-home{
+                width: 100%;
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+        .swiper {
+            width: 90%;
+            height: 180px;
+            margin-bottom: 20px;
+            border-radius: 30px;
+            margin-top: 90px;
+            border-color: aqua;
+             border-width: 3px;
+             border-style: solid;
+             box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+        }
+        .swiper-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+        }
+        .top-navbar {
+            position: fixed;
+            top: 0;
+            left: -10px;
+            width: 100%;
+            height: 70px;
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            z-index: 1000;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: bold;
+            padding: 15px;
+            cursor: pointer;
+        }
+        .nav-icons {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            cursor: pointer;
+            padding: 20px;
+        }
+        .notification {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+        }
+        .nav-icons :hover {
+            background-color: #a1a1a1;
+            border-radius: 10px;
+            padding: 5px;
+        }
+        @media only screen and (max-width: 600px) {
+            .top-navbar {
+                padding: 5px 10px;
+            }
+            .logo {
+                font-size: 15px;
+                gap: 5px;
+            }
+            .logo img {
+                height: 25px;
+                width: 25px;
+            }
+            .nav-icons img {
+                height: 25px;
+                width: 25px;
+            }
+            .notification {
+                width: 25px;
+                height: 25px;
+            }
+        }
+            .bord-elemnt-product{
+                background-color: white;
+                width: 100%;
+                height: 87px;
+                box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+                border-radius: 10px;
+            }
+       
+    .offers-title {
+        margin: 15px auto 10px;
+        text-align: center;
+        color: #111;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    .cube-offers{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+        margin: 10px auto 120px;
+        width: 90%;
+        max-width: 700px;
+    }
+    .bord-elemnt-offer1, .bord-elemnt-offer2, .bord-elemnt-offer3, .bord-elemnt-offer4 {
+        background-color: white;
+        border: 3px solid black;
+        min-height: 120px;
+        width: 100%;
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 2px 2px 10px rgba(0, 30, 255, 0.2);
+        cursor: pointer;
+    }
+    .bord-elemnt-offer1:hover, .bord-elemnt-offer2:hover, .bord-elemnt-offer3:hover, .bord-elemnt-offer4:hover {
+        background-color: #a1a1a1;
+        box-shadow: 2px 2px 10px rgba(0, 30, 255, 0.2);
+    }
+    @media only screen and (max-width: 600px) {
+        .bord-elemnt-offer1, .bord-elemnt-offer2, .bord-elemnt-offer3, .bord-elemnt-offer4 {
+            width: 90%;
+            max-width: 300px;
+        }
+    }
+           
+          
+    </style>
+      
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+</html>
