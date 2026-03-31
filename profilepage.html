@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+</head>
+<body>
+
+    <div class="profile-container">
+        <div class="profile-picture">
+            <img src="user.png" alt="Profile Picture" height="100px" width="100px">
+        </div>
+        <div class="profile-info">
+            <h2>User Name</h2>
+            <p>Email: user@example.com</p>
+            <p>Phone: +1234567890</p>
+            <p>Member since: January 2023</p>
+        </div>
+        <div class="profile-stats">
+            <div class="stat">
+                <h3>Orders</h3>
+                <p>12</p>
+            </div>
+            <div class="stat">
+                <h3>Wishlist</h3>
+                <p>5</p>
+            </div>
+            <div class="stat">
+                <h3>Points</h3>
+                <p>250</p>
+            </div>
+        </div>
+        <div class="profile-actions">
+            <button class="edit-btn">Edit Profile</button>
+            <a href="productspage.html"><button class="orders-btn">Order History</button></a>
+            <a href="productspage.html"><button class="wishlist-btn">Wishlist</button></a>
+            <button class="settings-btn">Settings</button>
+            <a href="signin.html"><button class="logout-btn">Logout</button></a>
+        </div>
+    </div>
+
+    <div class="list-home">
+        <ul>
+            <li><a href="signin.html"><img src="user.png" height="40px" width="40px"></a></li>
+            <li><a href="productspage.html"><img src="football.png" height="40px" width="40px"></a></li>
+            <li><a href="page7ajz.html"><img src="football-field.png" height="40px" width="40px"></a></li>
+            <li><a href="homeapp.html"><img src="home.png" height="40px" width="40px"></a></li>
+        </ul>
+    </div>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            font-family: Arial;
+        }
+        .list-home{
+            height: 25px;
+            width: 95%;
+            position: fixed;
+            bottom: 6px;
+            display: flex;
+            justify-content: space-around ;
+            padding: 20px ;
+        }
+        .list-home ul{
+            display: flex;
+            justify-content: space-around;
+            width: 90%;
+            padding: 0;
+            margin-top: -4px;
+            list-style: none;
+        }
+         li:hover{
+            background-color: #a1a1a1 ;
+            border-radius: 10px;
+            height: 40px;
+            width: 40px;
+            cursor: pointer;
+            padding: 5px;
+        }
+        @media only screen and (max-width: 400px) {
+            .list-home{
+                width: 100%;
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+        .top-navbar {
+            position: fixed;
+            top: 0;
+            left: -10px;
+            width: 100%;
+            height: 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            z-index: 1000;
+            border-radius: 10px;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: bold;
+            padding: 15px;
+            cursor: pointer;
+        }
+        .nav-icons {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            cursor: pointer;
+            padding: 20px;
+        }
+        .notification {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+        }
+        .nav-icons :hover {
+            background-color: #a1a1a1;
+            border-radius: 10px;
+            padding: 5px;
+        }
+        @media only screen and (max-width: 600px) {
+            .top-navbar {
+                padding: 5px 10px;
+            }
+            .logo {
+                font-size: 15px;
+                gap: 5px;
+            }
+            .logo img {
+                height: 25px;
+                width: 25px;
+            }
+            .nav-icons img {
+                height: 25px;
+                width: 25px;
+            }
+            .notification {
+                width: 25px;
+                height: 25px;
+            }
+        }
+        .profile-container {
+            margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            margin-bottom: 120px;
+        }
+        .profile-picture {
+            margin-bottom: 20px;
+        }
+        .profile-picture img {
+            border-radius: 50%;
+            border: 3px solid black;
+        }
+        .profile-info {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .profile-info h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .profile-info p {
+            margin: 5px 0;
+            color: #666;
+        }
+        .profile-stats {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            max-width: 300px;
+            margin-bottom: 20px;
+        }
+        .stat {
+            text-align: center;
+        }
+        .stat h3 {
+            margin: 0;
+            font-size: 16px;
+            color: #333;
+        }
+        .stat p {
+            margin: 5px 0;
+            font-size: 18px;
+            font-weight: bold;
+            color: #007bff;
+        }
+        .profile-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+        .edit-btn, .settings-btn, .orders-btn, .wishlist-btn, .logout-btn {
+            background-color: white;
+            border: 3px solid black;
+            border-radius: 25px;
+            height: 35px;
+            width: 150px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .edit-btn:hover, .settings-btn:hover, .orders-btn:hover, .wishlist-btn:hover, .logout-btn:hover {
+            background-color: #a1a1a1;
+        }
+        a {
+            text-decoration: none;
+        }
+    </style>
+</body>
+</html>
